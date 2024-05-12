@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #242424;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.root {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-buton{
+    background: rgb(59, 192, 59);
+    color: antiquewhite;
+    padding: 0;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form input,
+textarea {
+  width: 50%;
+  margin: 5px 0;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.form textarea {
+  width: 50%;
+  height: 100px;
+  font-weight: bolder;
+}
+
+.form input {
+  min-height: 30px;
+  font-weight: bolder;
+}
+
+.buttons {
+  display: flex;
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.button-form {
+  background-color: rgb(59, 192, 59);
+  color: whitesmoke;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #424040;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 200px;
+}
+
+.button-card {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: 2px white solid;
+  background-color: transparent;
+  color: aliceblue;
+  margin-left: 20px;
+  margin: 5px;
+}
+
+.button-card:hover {
+  color: red;
+  border: red solid 2px;
+}
+.card button:nth-child(1):hover {
+  color: yellow;
+  border: yellow solid 2px;
+}
+
+.card h1 {
+  text-transform: capitalize;
+  color: yellow;
+  padding: 5px;
+}
+
+.card p {
+  padding: 5px;
+}
+
+
+.div-form {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+.show-form {
+  display: none;
+}
+
+.active {
+  display: initial;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .form input,
+  textarea {
+    width: 95%;
+  }
+
+  .form button {
+    width: 95%;
+  }
+
+  button {
+    width: 95%;
+  }
+}
